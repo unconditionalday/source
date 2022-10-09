@@ -1,0 +1,30 @@
+    [
+        {
+            "name": "ansa",
+            "url": "https://www.ansa.it/sito/ansait_rss.xml"
+        },
+        {
+            "name": "corriere",
+            "url": "http://www.corriere.it/rss/homepage.xml"
+        },
+        {
+            "name": "la stampa",
+            "url": "http://www.lastampa.it/rss.xml"
+        },
+        {
+            "name": "il sole 24 ore",
+            "url": "http://www.ilsole24ore.com/rss/homepage.xml"
+        },
+        {
+            "name": "la gazzetta dello sport",
+            "url": "http://www.gazzetta.it/rss/homepage.xml"
+        },
+        {
+            "name": "il messaggero",
+            "url": "http://www.ilmessaggero.it/rss/homepage.xml"
+        },
+        {
+            "name": "il mattino",
+            "url": "http://www.ilmattino.it/rss/homepage.xml"
+        }
+    ]
