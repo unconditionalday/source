@@ -1,0 +1,33 @@
+name: "Source Checker"
+
+# **What it does**: Check RSS sources validity.
+# **Why we have it**: To make sure RSS feeds are ok.
+# **Who does it impact**: source.json.
+
+on:
+  push:
+    paths:
+      - source.json
+
+permissions:
+  contents: read
+  # Needed for the 'trilom/file-changes-action' action
+  pull-requests: read
+
+jobs:
+  check-source:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: "1.20"
+
+      - name: Install deps
+        run: go get .
+
+      - name: Check sources
+        run: go run . check rss source.json
