@@ -7,14 +7,13 @@ import (
 	"github.com/SlyMarbo/rss"
 )
 
-type RSSChecker struct{}
+type RSSCheck struct{}
 
-func NewRSSChecker() RSSChecker {
-	return RSSChecker{}
+func NewRSSCheck() RSSCheck {
+	return RSSCheck{}
 }
 
-func (c RSSChecker) Availability(src string) bool {
-	// check rss availability
+func (c RSSCheck) Availability(src string) bool {
 	if _, err := rss.Fetch(src); err != nil {
 		return false
 	}
@@ -22,7 +21,7 @@ func (c RSSChecker) Availability(src string) bool {
 	return true
 }
 
-func (c RSSChecker) Latency(src string) (int64, error) {
+func (c RSSCheck) Latency(src string) (int64, error) {
 	n := time.Now()
 	req, _ := http.NewRequest("GET", src, nil)
 
