@@ -5,7 +5,7 @@ import (
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/unconditionalday/source-checker/internal/checker"
+	checker "github.com/unconditionalday/source-checker/internal/check"
 	"github.com/unconditionalday/source-checker/internal/source"
 	iox "github.com/unconditionalday/source-checker/internal/x/io"
 
@@ -33,13 +33,13 @@ func NewRSSCheckCmd() *cobra.Command {
 				return err
 			}
 
-			c := checker.NewRSSChecker()
+			c := checker.NewRSSCheck()
 
 			x := pterm.TableData{
 				{"Name", "URL", "Availability", "Latency"},
 			}
 
-			pb, _ := pterm.DefaultProgressbar.WithTotal(len(s)).WithTitle("Installing stuff").Start()
+			pb, _ := pterm.DefaultProgressbar.WithTotal(len(s)).WithTitle("Checking RSS Sources...").Start()
 			var errors []error
 			for i := 0; i < pb.Total; i++ {
 				pb.UpdateTitle("Checking " + ActualStyle.Sprint(s[i].Name))
@@ -73,7 +73,7 @@ func NewRSSCheckCmd() *cobra.Command {
 	return cmd
 }
 
-func ProcessRSSFeed(rssURL string, c checker.RSSChecker) (string, string, error) {
+func ProcessRSSFeed(rssURL string, c checker.RSSCheck) (string, string, error) {
 	aRes := UnavailableStr
 	lRes := ErrorStr
 
