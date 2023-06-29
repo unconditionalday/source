@@ -84,7 +84,7 @@ func ProcessRSSFeed(rssURL string, c checker.RSSCheck) (string, string, error) {
 	}
 
 	if latency, err := c.Latency(rssURL); err == nil {
-		if latency > 2000 {
+		if latency > 5000 {
 			lRes = FailureStyle.Sprintf("%dms", latency)
 			return aRes, lRes, fmt.Errorf("%s is too slow", rssURL)
 		}
