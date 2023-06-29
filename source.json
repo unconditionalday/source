@@ -26,5 +26,73 @@
         {
             "name": "il mattino",
             "url": "http://www.ilmattino.it/rss/homepage.xml"
+        },
+        {
+            "name": "il fatto quotidiano",
+            "url": "http://www.ilfattoquotidiano.it/feed/"
+        },
+        {
+            "name": "huffpost",
+            "url": "https://www.huffpost.com/section/world-news/feed"
+        },
+        {
+            "name": "il giornale",
+            "url": "http://www.ilgiornale.it/feed.xml"
+        },
+        {
+            "name": "BBC",
+            "url": "http://feeds.bbci.co.uk/news/rss.xml"
+        },
+        {
+            "name": "NYTimes",
+            "url": "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+        },
+        {
+            "name": "CNN",
+            "url": "http://rss.cnn.com/rss/edition.rss"
+        },
+        {
+            "name": "Wired",
+            "url": "http://www.wired.com/news_drop/netcenter/netcenter.rdf"
+        },
+        {
+            "name": "Yahoo News",
+            "url": "http://rss.news.yahoo.com/rss/topstories"
+        },
+        {
+            "name": "The Guardian",
+            "url": "http://www.guardian.co.uk/rssfeed/0,,1,00.xml"
+        },
+        {
+            "name": "Mashable!",
+            "url": "http://feeds.mashable.com/mashable"
+        },
+        {
+            "name": "ZeroHedge",
+            "url": "http://feeds.feedburner.com/zerohedge/feed"
+        },
+        {
+            "name": "Naked Capitalism",
+            "url": "http://www.nakedcapitalism.com/feed"
+        },
+        {
+            "name": "Business Insider",
+            "url": "http://feeds2.feedburner.com/businessinsider"
+        },
+        {
+            "name": "Calculated Risk",
+            "url": "http://feeds.feedburner.com/CalculatedRisk"
+        },
+        {
+            "name": "Daily Kos",
+            "url": "http://feeds.dailykos.com/dailykos/index.xml"
+        },
+        {
+            "name": "RedState",
+            "url": "http://www.redstate.com/feed/rss/"
+        },
+        {
+            "name": "The Hill",
+            "url": "http://thehill.com/rss/syndicator/19110"
         }
     ]
