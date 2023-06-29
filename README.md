@@ -1,5 +1,9 @@
 # Source
-![alt text](3.png "Logo")
+
+<p align="center">
+  <img src=".docs/logo.png" />
+</p>
+
 The purpose of this repository is to provide a public and open-source list of rss sources that can be used by the [*Unconditional.*]("https://unconditional.day") project. 
 # How to add a new source
 The list is stored in the source.json file. The file contains a list of objects. Each object represents a source. The object has the following structure:
