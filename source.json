@@ -94,5 +94,25 @@
         {
             "name": "The Hill",
             "url": "http://thehill.com/rss/syndicator/19110"
+        },
+        {
+            "name": "Vox",
+            "url": "https://www.vox.com/rss/index.xml"
+        },
+        {
+            "name": "AlterNet",
+            "url": "https://www.alternet.org/feeds/feed.rss"
+        },
+        {
+            "name": "Propublica",
+            "url": "https://www.propublica.org/feeds/propublica/main"
+        },
+        {
+            "name": "Reuters",
+            "url": "https://www.reutersagency.com/feed/"
+        },
+        {
+            "name": "PewResearch",
+            "url": "https://www.pewresearch.org/feed/"
         }
     ]
