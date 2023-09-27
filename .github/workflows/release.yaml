@@ -20,6 +20,6 @@ jobs:
 
       - name: Release
         run: |
-          ./scripts/release.sh $BOT_GITHUB_TOKEN
+          ./scripts/release.sh unconditionalday source $BOT_GITHUB_TOKEN
         env:
           BOT_GITHUB_TOKEN: ${{ secrets.BOT_GITHUB_TOKEN }}
