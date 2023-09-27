@@ -24,6 +24,7 @@ if [ "$release_id" != "null" ]; then
 else
   echo "Error creating the release on GitHub."
   echo "$response"
+  git push --delete origin "$calver"
   exit 1
 fi
 
