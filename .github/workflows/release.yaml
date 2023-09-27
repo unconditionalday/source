@@ -1,0 +1,25 @@
+name: Create Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Git
+        run: |
+          git config --global user.email "info@unconditional.day"
+          git config --global user.name "unconditionalbot"
+
+      - name: Release
+        run: |
+          ./scripts/release.sh $BOT_GITHUB_TOKEN
+        env:
+          BOT_GITHUB_TOKEN: ${{ secrets.BOT_GITHUB_TOKEN }}
